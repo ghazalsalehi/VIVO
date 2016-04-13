@@ -1,0 +1,70 @@
+/* RDFBalloon CSS */
+.rdfballoon-body {
+	position: absolute;
+	background: white;
+	padding:10px;
+	border-radius:5px;
+	box-shadow: 0px 0px 20px #888888;
+	overflow:hidden;
+	z-index:4;
+}
+
+.rdfballoon-button{
+	float: right;
+	border-radius: 3px;
+	font-size: 11px;
+	padding: 1px 16px;
+	margin-left: 5px;
+	color:#fff;
+	background: url(/themes/qut/images/blue-button.png) repeat-x scroll 0 0 transparent;
+	cursor:pointer;
+	cursor:hand;
+}
+
+.rdfballoon-row {
+	width: 100%;
+	float: left;
+	padding-bottom: 10px;
+}
+.rdfballoon-row.last{
+	padding-bottom: 0px;
+}
+
+.rdfballoon-waiting {
+	width:100%;
+	float: left;
+	text-align: center;
+	height:50px;
+	margin-top:30px;
+}
+
+.rdfballoon-waiting-img {
+	height: 19px;
+    width: 220px;
+    background-image: url('../../common/images/ajax-loader.gif');
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rdfballoon-balloon-arrow{
+	position: absolute;
+	background-image:url('../images/rdf-balloon-arrow.png');
+	height:38px;
+	width:71px;
+	z-index:5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

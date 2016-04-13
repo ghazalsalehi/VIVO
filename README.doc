@@ -1,0 +1,6 @@
+For the initial setup;
+
+1. Create a directory called data in the rootr folder /
+2. rename deploy.properties.localhost or prod into deploy.properties
+3. Compile and start the server
+4. Then Rebuild the search index.

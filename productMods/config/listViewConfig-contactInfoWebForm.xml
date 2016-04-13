@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Copyright (c) 2015, QUT University All rights reserved. -->
+
+<!-- See guidelines in vitro/doc/list_view_configuration_guidelines.txt -->
+
+<list-view-config>
+	<query-select>
+		PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX core: &lt;http://www.qut.edu.au/ontologies/vivoqut#&gt;
+
+		SELECT DISTINCT ?obj ?freeTextValue1 ?freeTextValue2 ?freeTextValue3 ?freeTextValue4 ?freeTextValue5 ?freeTextValue6 ?freeTextValue7
+		WHERE {
+		?subject ?property ?obj
+		OPTIONAL { ?obj core:freeTextValue1 ?freeTextValue1 }
+		OPTIONAL { ?obj core:freeTextValue2 ?freeTextValue2 }
+		OPTIONAL { ?obj core:freeTextValue3 ?freeTextValue3 }
+		OPTIONAL { ?obj core:freeTextValue4 ?freeTextValue4 }
+		OPTIONAL { ?obj core:freeTextValue5 ?freeTextValue5 }
+		OPTIONAL { ?obj core:freeTextValue6 ?freeTextValue6 }
+		OPTIONAL { ?obj core:freeTextValue7 ?freeTextValue7 }
+		}
+	</query-select>
+
+	<query-construct>
+		PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX core: &lt;http://www.qut.edu.au/ontologies/vivoqut#&gt;
+
+		CONSTRUCT {
+		?subject ?property ?obj .
+		?obj core:freeTextValue1 ?freeTextValue1 .
+		?obj core:freeTextValue2 ?freeTextValue2 .
+		?obj core:freeTextValue3 ?freeTextValue3 .
+		?obj core:freeTextValue4 ?freeTextValue4 .
+		?obj core:freeTextValue5 ?freeTextValue5 .
+		?obj core:freeTextValue6 ?freeTextValue6 .
+		?obj core:freeTextValue7 ?freeTextValue7
+		} WHERE {
+		{
+		?subject ?property ?obj .
+		}
+		UNION {
+		?subject ?property ?obj .
+		?obj core:freeTextValue1 ?freeTextValue1
+		}
+		UNION {
+		?subject ?property ?obj .
+		?obj core:freeTextValue2 ?freeTextValue2
+		}
+		UNION {
+		?subject ?property ?obj .
+		?obj core:freeTextValue3 ?freeTextValue3
+		}
+		UNION {
+		?subject ?property ?obj .
+		?obj core:freeTextValue4 ?freeTextValue4
+		}
+		UNION {
+		?subject ?property ?obj .
+		?obj core:freeTextValue5 ?freeTextValue5
+		}
+		UNION {
+		?subject ?property ?obj .
+		?obj core:freeTextValue6 ?freeTextValue6
+		}
+		UNION {
+		?subject ?property ?obj .
+		?obj core:freeTextValue7 ?freeTextValue7
+		}
+		}
+
+	</query-construct>
+
+	<template>propStatement-contactInfoWebForm.ftl</template>
+</list-view-config>

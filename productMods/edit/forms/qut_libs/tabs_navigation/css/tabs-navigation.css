@@ -1,0 +1,98 @@
+/* Tabs-Navigation CSS */
+
+#navigation-tabs {
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+#navigation-tabs li {
+  float: left;
+  margin: 0 -14px 0 0;
+  opacity: .5;
+  filter: alpha(opacity=30);
+}
+
+#navigation-tabs a {
+  float: left;
+  position: relative;
+  padding: 0 40px;
+  line-height: 34px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background: #1C5F9A;
+}
+
+#navigation-tabs a.four-tabs {
+	width:173px;
+}
+
+#navigation-tabs a.three-tabs{
+	width:260px;
+}
+
+#navigation-tabs a:hover,
+#navigation-tabs a:focus {
+  border-bottom-color: #2ac7e1;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+#navigation-tabs a:focus {
+  outline: 0;
+}
+
+#navigation-tabs .current {
+  z-index: 3;
+  border-bottom-color: #3d3d3d;
+  opacity: 1;
+  filter: alpha(opacity=100);   
+}
+
+#navigation-tabs li .arrow-right {
+    width: 0;
+    height:0;
+    border-top: 17px solid transparent;
+    border-left: 17px solid #1C5F9A;
+    border-bottom: 17px solid transparent;
+    float: right;
+}
+
+
+#navigation-tabs li .arrow-left {
+    width: 0;
+    height:0;
+    border-top: 17px solid #1C5F9A;
+    border-left: 17px solid transparent;
+    border-bottom: 17px solid #1C5F9A;
+    float: left;
+}
+
+#navigation-tabs li:first-child .arrow-left {
+    display: none;
+}
+
+#navigation-tabs li:last-child .arrow-right {
+    display: none;
+}
+
+.navigation-pagination .disabled {
+	  opacity: 0.5;
+}
+
+.navigation-pagination .pagination-button {
+  float: right;
+  border-radius: 3px;
+  font-size: 11px;
+  padding: 1px 16px 1px;
+  margin-left: 5px;
+  color: #fff;
+  background: url(/themes/qut/images/blue-button.png) repeat-x scroll 0 0 transparent;
+  cursor: pointer;
+  margin-top: 15px;
+}

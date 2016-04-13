@@ -1,0 +1,60 @@
+/*.div_help {
+	width: 1036px;
+	float: left;
+	border-bottom: dashed #bbf 1px;
+}*/
+
+
+.div_help {
+	width: 99%;
+	float: left;
+	border: 1px solid #094F95;
+}
+
+.help_heading{
+	border-bottom: 1px solid #094F95;
+}
+
+.help_heading h4{
+	padding: 0px;
+	color: #094F95;
+	font-weight: bold;
+}
+
+.help_text {
+	float: left;
+	word-wrap: normal;
+	margin: 18px;
+	text-align: justify;
+}
+
+.help_btn {
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	right: 1px;
+	top: 4px;
+	cursor: pointer;
+}
+
+.help_hidden {
+	background-image: url('../images/help.gif');
+}
+
+.help_shown {
+	background-image: url('../images/minus.png');
+}
+
+.inline_help {
+	border: none !important;
+}
+
+.inline_help_text {
+	width: 600px !important;
+	margin-top: 0px !important;
+}
+
+a.morelink {
+color: #666;
+background: #eee;
+}

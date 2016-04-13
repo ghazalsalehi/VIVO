@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY display "http://vitro.mannlib.cornell.edu/ontologies/display/1.1#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+<!ENTITY vitro "http://vitro.mannlib.cornell.edu/ns/vitro/0.7#">
+]>
+
+<rdf:RDF xml:base="http://vitro.mannlib.cornell.edu/ontologies/display/1.1/"
+    xmlns:display="&display;"
+    xmlns:owl="&owl;"
+    xmlns:rdf="&rdf;"
+    xmlns:rdfs="&rdfs;"
+    xmlns:vitro="&vitro;">
+
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#authorInAuthorship">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-authorInAuthorship.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#educationalTraining">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-educationalTraining.xml</display:listViewConfigFile>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#informationResourceInAuthorship">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-informationResourceInAuthorship.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#personInPosition">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-personInPosition.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#organizationForPosition">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-organizationForPosition.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#organizationForTraining">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-organizationForTraining.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#mailingAddress">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-mailingAddress.xml</display:listViewConfigFile>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#awardOrHonor">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-awardOrHonor.xml</display:listViewConfigFile>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#advisorIn">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-advisorIn.xml</display:listViewConfigFile>
+    </rdf:Description>
+	
+    <!--
+     ******************************************************************
+     all roles use same config...is there a better way to specify this?
+     ** core:hasClinicalRole
+     ** core:hasLeaderRole
+     ** core:hasMemberRole
+     ** core:hasOutreachProviderRole
+     ** core:hasServiceProviderRole
+     ** core:hasResearcherRole
+     ** core:hasTeacherRole
+     ** core:hasOrganizerRole
+     ** core:hasAttendeeRole
+     these three are an exception, and share a separate config
+     ** core:hasInvestigatorRole
+     ** core:hasCo-PrincipalInvestigatorRole
+     ** core:hasPrincipalInvestigatorRole
+     ******************************************************************
+    -->
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasClinicalRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasLeaderRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasMemberRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasOutreachProviderRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasServiceProviderRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasResearcherRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+        
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasTeacherRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+        
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasOrganizerRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasEditorRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasEditReviewRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasReviewerRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasEditReviewRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+       
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasPresenterRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasPresenterRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasAttendeeRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasAttendeeRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+        
+    <!-- The next three roles use a different config -->
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasInvestigatorRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasInvestigatorRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasCo-PrincipalInvestigatorRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasInvestigatorRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasPrincipalInvestigatorRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasInvestigatorRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+
+    <!--
+     ******************************************************************
+     end roles (from person) config
+     ****************************************************************** 
+    -->
+        
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#realizedRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#contributingRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#linkedRole">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedRole.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#dateTimeInterval">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-dateTimeInterval.xml</display:listViewConfigFile>
+    </rdf:Description>
+
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#dateTimeValue">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-dateTimeValue.xml</display:listViewConfigFile>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#start">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-dateTimeValue.xml</display:listViewConfigFile>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#end">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-dateTimeValue.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#webpage">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-webpage.xml</display:listViewConfigFile>
+    </rdf:Description>    
+  
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasAssociatedConcept">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasAssociatedConcept.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasSubjectArea">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasAssociatedConcept.xml</display:listViewConfigFile>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#hasResearchArea">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-hasAssociatedConcept.xml</display:listViewConfigFile>
+    </rdf:Description>
+
+    <!--
+     ******************************************************************
+     data property custom list views
+     ****************************************************************** 
+    -->
+        
+    <rdf:Description rdf:about="http://vivoweb.org/ontology/core#scopusId">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-scopusId.xml</display:listViewConfigFile>
+    </rdf:Description>
+	
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#dataCiteDOI">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-dataCiteDOI.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#dataCitation">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-citationMetaDataWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#biography">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-biographyWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#keywords">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#currentRelInfoMemberOf">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#headOf">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#collaborator">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#clinicalActivities">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#qutEPrints">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#relatedInformation">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#relatedMetadata">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#nlaPartyIdentifier">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#scopusAuthorID">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#thomsonReutersResearcherID">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#ordcIdentifier">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#localKey">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#mediafluxIdentifier">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#emailAddress">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#prefefredTitleText">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#supressTitle">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#firstName">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#supressFirstName">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#surname">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#supressSurname">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#researchAreas">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-researchAreasWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#internalOrExternal">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFieldOptionsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#isApprovedbyLibrary">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFieldOptionsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#isApprovedByOoR">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFieldOptionsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#dataTypeInfo">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFieldOptionsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#publishRecord">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-recordStatusWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#stateOrTerritory">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFieldOptionsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivo#webpage">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#predecessorOrganisation">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#successorOrganisation">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#organizationWithin">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#affiliatedInstitution">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#publisherOfQut">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#collectionOrSeriesEditorOf">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#organiserOf">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#reviewerOf">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#serviceToTheProfession">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#outreachService">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#adviseeIn">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#contributor">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#eligibleFor">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#abbreviation">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#name">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#spatialCoverage">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-spatialCoverageWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#internalorExternalFunding">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#locationOfDigitalData">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#otherIdentifierType">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#organisationName">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#existenceDates">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-temporalOrExistenceDates.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#temporalCoverage">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-temporalOrExistenceDates.xml</display:listViewConfigFile>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#datesOfDevelopment">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-temporalOrExistenceDates.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#facultyOrDepartmentName">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#partOf">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#citationStyle">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-citationUsingStyleWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#digitalObjectIdentifier">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#primaryContact">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description> 
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#academicProfile">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#website">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-twoFieldsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#embargoDate">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFieldCalendarWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#dateMadePublicInRDF">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFieldCalendarWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#dateRecordCreated">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFieldCalendarWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#dateRecordModified">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFieldCalendarWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#RMPersonCode">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#phone">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#fax">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#geographicFocus">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#fundingScheme">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#grantor">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#RMProjectCode">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#projectStatus">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#AOUName">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#version">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#offlineLocation">
+       <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#dataFileTypes">
+       <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#copyrightInfo">
+       <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-copyright.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#accessRightsInfo">
+       <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#licence">
+       <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-licenceWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#partnerInstitution">
+       <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-relatedInfoWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#retentionPeriod">
+       <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#dateOfDisposal">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFieldCalendarWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#accessPolicyURL">
+       <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#AOUNameCode">
+       <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-oneFreeTextBoxWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#position">
+       <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-positionWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#recordInitiallyCreatedBy">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-recordCreatedByWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#assignForReviewOrComplete">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-assignForReviewOrCompleteWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#linkToexternalRecords">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-linkToexternalRecordsWebFrom.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#contactInfo">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-contactInfoWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+	<rdf:Description rdf:about="http://www.qut.edu.au/ontologies/vivoqut#RDRDataUpload">
+        <display:listViewConfigFile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">listViewConfig-RDRDataUploadWebForm.xml</display:listViewConfigFile>
+    </rdf:Description>
+</rdf:RDF>

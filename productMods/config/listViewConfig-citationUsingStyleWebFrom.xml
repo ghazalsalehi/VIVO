@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Copyright (c) 2013, QUT University All rights reserved. -->
+
+<!-- See guidelines in vitro/doc/list_view_configuration_guidelines.txt -->
+
+<list-view-config>
+	<query-select>
+		PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX core: &lt;http://www.qut.edu.au/ontologies/vivoqut#&gt;
+
+		SELECT DISTINCT ?obj ?freeTextValue1 ?freeTextValue2 ?infoType1
+		WHERE {
+		?subject ?property ?obj
+		OPTIONAL { ?obj core:freeTextValue1 ?freeTextValue1 }
+		OPTIONAL { ?obj core:freeTextValue2 ?freeTextValue2 }
+		OPTIONAL { ?obj core:infoType1 ?infoType1 }
+		}
+	</query-select>
+
+	<query-construct>
+		PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+		PREFIX core: &lt;http://www.qut.edu.au/ontologies/vivoqut#&gt;
+
+		CONSTRUCT {
+		?subject ?property ?obj .
+		?obj core:freeTextValue1 ?freeTextValue1 .
+		?obj core:freeTextValue2 ?freeTextValue2 .
+		?obj core:infoType1 ?infoType1 
+		} WHERE {
+		{
+		?subject ?property ?obj .
+		}
+		UNION {
+		?subject ?property ?obj .
+		?obj core:freeTextValue1 ?freeTextValue1
+		}
+		UNION {
+		?subject ?property ?obj .
+		?obj core:freeTextValue2 ?freeTextValue2
+		}
+		UNION {
+		?subject ?property ?obj .
+		?obj core:infoType1 ?infoType1
+		}
+		}
+
+	</query-construct>
+
+	<template>propStatement-citationUsingStyleWebForm.ftl</template>
+</list-view-config>

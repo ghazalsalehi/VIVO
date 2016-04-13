@@ -1,0 +1,204 @@
+/* Iconize 0.3 */
+
+/* FOR MAINTAINABILITY PLEASE NOTE ANY CHANGES HERE
+
+- added .ppt
+- added popup
+
+*/
+
+/* websites (pictures and movies) */
+#wrapper-content a[href *='youtube.com/watch?'], #wrapper-content a[href *='sevenload.com/videos/'], #wrapper-content a[href *='metacafe.com/watch/'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_film.gif) no-repeat center right;
+}
+
+#wrapper-content a[href *='flickr.com/photos/'], #wrapper-content a[href *='zooomr.com'], #wrapper-content a[href *='imageshack.us'], #wrapper-content a[href *='bubbleshare.com'], #wrapper-content a[href *='sevenload.com/bilder/'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_pic.gif) no-repeat center right;
+}
+
+/* extensions */
+
+
+#wrapper-content a[href$='.doc'], #wrapper-content a[href$='.rtf'] {
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_doc.gif) no-repeat center right;
+} 
+
+#wrapper-content a[href$='.txt'], #wrapper-content a[href$='.dat'] {
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_txt.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.xls'] {
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_xls.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.rss'], #wrapper-content a[href$='.atom'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_feed.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.opml'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_opml.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.vcard'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_vcard.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.exe'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_exe.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.dmg'], #wrapper-content a[href$='.app'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_dmg.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.pps'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_pps.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.ppt'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_pps.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.pdf'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_pdf.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.xpi'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_plugin.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.fla'], #wrapper-content a[href$='.swf'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_flash.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.zip'], #wrapper-content a[href$='.rar'], #wrapper-content a[href$='.gzip'], #wrapper-content a[href$='.gz'], #wrapper-content a[href$='.bzip'], #wrapper-content a[href$='.ace'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_archive.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.ical'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_ical.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.css'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_css.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.ttf'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_ttf.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.jpg'], #wrapper-content a[href$='.gif'], #wrapper-content a[href$='.png'], #wrapper-content a[href$='.bmp'], #wrapper-content a[href$='.jpeg'], #wrapper-content a[href$='.svg'], #wrapper-content a[href$='.eps'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_pic.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.mov'], #wrapper-content a[href$='.wmv'], #wrapper-content a[href$='.mp4'], #wrapper-content a[href$='.avi'], #wrapper-content a[href$='.mpg'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_film.gif) no-repeat center right;
+}
+
+#wrapper-content a[href$='.mp3'], #wrapper-content a[href$='.wav'], #wrapper-content a[href$='.ogg'], #wrapper-content a[href$='.wma'], #wrapper-content a[href$='.m4a'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_music.gif) no-repeat center right;
+}
+
+/* messenger */
+#wrapper-content a[href^='aim:'] {
+	padding: 5px 20px 5px 0;
+    background: transparent url(icons/icon_aim.gif) no-repeat center right;
+}
+
+#wrapper-content a[href^='msnim:'] {
+	padding: 5px 20px 5px 0;
+    background: transparent url(icons/icon_msn.gif) no-repeat center right;
+}
+
+#wrapper-content a[href^='xmpp:'] {
+	padding: 5px 20px 5px 0;
+    background: transparent url(icons/icon_jabber.gif) no-repeat center right;
+}
+
+#wrapper-content a[href*='icq.com'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_icq.gif) no-repeat center right;
+}
+
+#wrapper-content a[href*='edit.yahoo.com/config/send_webmesg?'] { 
+	padding: 5px 20px 5px 0;
+	background: transparent url(icons/icon_yim.gif) no-repeat center right;
+}
+
+#wrapper-content a[href^='callto:'] {
+	padding: 5px 20px 5px 0;
+    background: transparent url(icons/icon_call.gif) no-repeat center right;
+}
+
+#wrapper-content a[href^='skype:'] {
+	padding: 5px 20px 5px 0;
+    background: transparent url(icons/icon_skype.gif) no-repeat center right;
+}
+
+
+/* ADDITIONS TO ORIGINAL */
+
+
+#wrapper-content a[target ='new'], #wrapper-content a[target ='blank'], #wrapper-content a[target ='_blank'] {
+	/*padding-right: 18px;
+	background: transparent url(icons/icon_popup.gif) no-repeat center right;*/
+}
+
+/* external links - a bit hacky */
+
+
+#wrapper-content a[href^='http'] {
+	/*padding-right: 18px;
+	background: transparent url(icons/icon_external.gif) no-repeat center right;*/
+}
+
+#wrapper-content a[href*='qut.edu.au'] {
+	background:none;
+	padding-right: 0px;
+}
+
+#wrapper-content a[class^='no_icon'] {
+	padding-right: 0px !important;
+	background: none !important;
+}
+
+/* email */
+#wrapper-content a[href^='mailto:'] {
+	padding: 5px 20px 5px 0;
+    background: transparent url(icons/icon_mailto.gif) no-repeat center right;
+}
+
+/* making sure images don't get icons */
+
+.imageLink {
+	padding-right: 0px !important;
+	background: none !important;
+}
+
+/* Stop thumbnails from displaying icons */
+#wrapper-content a[href*='.jpg'] {
+	background:none;
+	padding-right: 0px;
+}
